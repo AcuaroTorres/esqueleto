@@ -11,6 +11,9 @@
 |
 */
 
+/* Controller for test propuses */
+Route::get('test', 'TestController');
+
 Route::get('/', function () {
     return view('welcome');
 });
