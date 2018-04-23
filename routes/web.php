@@ -12,7 +12,9 @@
 */
 
 /* Controller for test propuses */
-Route::get('test', 'TestController');
+Route::get('test', function () {
+    return view('test');
+});
 
 Route::get('/', function () {
     return view('welcome');
