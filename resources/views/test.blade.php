@@ -41,11 +41,16 @@
 	<div class="col">
 		<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
 			<h4 id="list-item-1">Item 1</h4>
+			@lang('This is the  string :name o si', ['name' => 'dayle'])
 			<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate commodi, autem praesentium iure iusto eaque doloribus vitae quis aliquam ab soluta molestiae ex placeat vel impedit sequi. Voluptatum, voluptate quo?</span>
 			<span>Omnis nihil aspernatur suscipit at nesciunt iure magni minima sint placeat optio, fugiat labore, dignissimos soluta perspiciatis laudantium ex temporibus molestias, quam cupiditate. Voluptatibus voluptates suscipit, similique saepe et excepturi?</span>
 			<span>Aperiam quam numquam sed totam alias sapiente ducimus quibusdam, rem veritatis neque officiis explicabo. Dolor sunt optio nobis ipsum doloremque possimus maiores eveniet, enim labore doloribus, tempore architecto eligendi minima.</span></p>
+			@lang('Second string')
 			<h4 id="list-item-2">Item 2</h4>
 			<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi sed ipsa quisquam quos assumenda dolores aut reiciendis culpa. Explicabo ipsum suscipit eaque eos necessitatibus illo, iusto vero voluptas a adipisci?</span><span>Esse similique, hic eaque quasi tempora perspiciatis, harum dolorum nulla aut qui iure labore ipsum vero necessitatibus omnis est voluptatum vitae sed ducimus voluptates quam distinctio ipsa laudantium? Asperiores, officiis.</span></p>
+			{{__('Final')}}{{__('Duke')}}
+			{{__('Semi', ['name' => 'dayle'] )}}
+			
 		</div>
 		<form>
 			<div class="form-row">
