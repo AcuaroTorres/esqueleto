@@ -13,7 +13,7 @@
 ```
 
 - php artisan make:auth
-- update layout.blade: add jquery.min.js first, change bootstrap.min.js and bootstrap.min.css
+- update layout\app.blade.php: add jquery.min.js first, change bootstrap.min.js and bootstrap.min.css
 - composer require spatie/laravel-permission
 - php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider" --tag="migrations"
 - php artisan migrate
