@@ -3,7 +3,8 @@
 - set .env variables
 - composer require twbs/bootstrap
 - composer require components/jquery
-```         "post-update-cmd": [
+```
+        "post-update-cmd": [
             "cp -R vendor/twbs/bootstrap/dist/css/*.min.css public/css/",
             "cp -R vendor/twbs/bootstrap/dist/js/*.min.js public/js/",
             "cp -R vendor/components/jquery/*.min.js public/js/"
