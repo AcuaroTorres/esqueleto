@@ -13,7 +13,18 @@
 ```
 
 - php artisan make:auth
-- update layout\app.blade.php: add jquery.min.js first, change bootstrap.min.js and bootstrap.min.css
+- update layout\app.blade.php: 
+```
+<!-- Styles Top of the page -->
+<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS Botton -->
+<script src="{{ asset('js/jquery.slim.min.js') }}" defer></script>
+<script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
+<script src="{{ asset('js/popper.min.js') }}" defer></script>
+```
+
 - composer require spatie/laravel-permission
 - php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider" --tag="migrations"
 - php artisan migrate
