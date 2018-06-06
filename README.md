@@ -49,3 +49,21 @@ class User extends Authenticatable
         'Role' => Spatie\Permission\Models\Role::class,
         'Permission' => Spatie\Permission\Models\Permission::class,
 ```
+
+#### Change email to RUN in Auth
+
+* Add run column in user table migration // $table->string('run')->unique()
+* Run migrate artisan command
+* Edit registration view to add run input field
+* Edit RegisterController
+	* Add run to validator() method
+	* Add run to create() method
+* Edit User model to add run to $filliable property
+* Edit LoginController to overwerite username() method
+```
+    public function username()
+    {
+        return 'run';
+    }
+```
+* Edit the login view to swap the email input field with run input field
